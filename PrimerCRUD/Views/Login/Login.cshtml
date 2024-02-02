@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+</head>
+<body id="body1">
+    <div id="LoginDiv">
+        <h1>Iniciar sesion</h1>
+        <form>
+            <h3>Usuario</h3>
+            <input type="text" id="LoginInput"/>
+            <h3>Contraseña</h3>
+            <input type="password" id="LoginInput" />
+            <br />
+            <input type="radio" id="radio" />
+            <label for="radio">Rrcordar Usuario</label>
+            <br/>
+            <button>Ingresar</button>
+            <button asp-controller ="Home" asp-action="Index">Volver</button>
+        </form>
+    </div>
+</body>
+<footer>
+   
+</footer>
+
+
+
+
+
+
