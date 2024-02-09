@@ -2,6 +2,8 @@ using Microsoft.Extensions.Configuration;
 using PrimerCRUD.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using Microsoft.AspNetCore.Identity;
+using PrimerCRUD.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +14,13 @@ builder.Services.AddControllers();
 var Configuration = builder.Configuration;
 
 
-//string a = Configuration["ConnectionString:conexion"];
+
 
 builder.Services.AddDbContext<DbcrudContext>(options => options.UseSqlServer(builder.Configuration["ConnectionString:conexion"]));
+builder.Services.AddIdentity<MyUsruario, MyRol>();
+
+
+
 
 var app = builder.Build();
 

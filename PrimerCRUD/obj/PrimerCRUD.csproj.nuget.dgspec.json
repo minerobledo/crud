@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franc\\source\\repos\\PrimerCRUD\\PrimerCRUD\\PrimerCRUD.csproj": {}
+    "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\PrimerCRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franc\\source\\repos\\PrimerCRUD\\PrimerCRUD\\PrimerCRUD.csproj": {
+    "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\PrimerCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\source\\repos\\PrimerCRUD\\PrimerCRUD\\PrimerCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\PrimerCRUD.csproj",
         "projectName": "PrimerCRUD",
-        "projectPath": "C:\\Users\\franc\\source\\repos\\PrimerCRUD\\PrimerCRUD\\PrimerCRUD.csproj",
+        "projectPath": "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\PrimerCRUD.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\source\\repos\\PrimerCRUD\\PrimerCRUD\\obj\\",
+        "outputPath": "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,7 +40,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.1, )"
             },
@@ -53,10 +63,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.1, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[8.0.0, )"
             }
           },
           "imports": [
