@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using PrimerCRUD.Identity;
 using PrimerCRUD.Models;
 
 namespace PrimerCRUD.Controllers
 {
     public class UsuariosController : Controller
     {
-        private readonly DbcrudContext _context;
+        private readonly MyIdentitiDBCRUDContext _context;
 
-        public UsuariosController(DbcrudContext context)
+        public UsuariosController(MyIdentitiDBCRUDContext context)
         {
             _context = context;
         }

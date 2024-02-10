@@ -16,8 +16,25 @@ var Configuration = builder.Configuration;
 
 
 
-builder.Services.AddDbContext<DbcrudContext>(options => options.UseSqlServer(builder.Configuration["ConnectionString:conexion"]));
-builder.Services.AddIdentity<MyUsruario, MyRol>();
+builder.Services.AddDbContext<MyIdentitiDBCRUDContext>(options => options.UseSqlServer(builder.Configuration["ConnectionString:conexion"]));
+builder.Services.AddIdentity<MyUsruario, MyRol>
+    (
+        Option =>
+        {
+            // opciones de usuario
+            Option.User.RequireUniqueEmail = true;
+
+            //opciones de contracenña
+            Option.Password.RequireDigit = true;
+            Option.Password.RequiredLength = 8;
+            Option.Password.RequireUppercase = true;
+            Option.Password.RequireLowercase = true;
+            Option.Password.RequireNonAlphanumeric = true;
+
+            //opciones de tokems
+            Option.Lockout.AllowedForNewUsers = true;
+            }
+    ).AddDefaultTokenProviders().AddEntityFrameworkStores<MyIdentitiDBCRUDContext>();
 
 
 

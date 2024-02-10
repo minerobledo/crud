@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wtwzK+Umu7jBKm7DPST6AD0xO7HJ1qu6glLQXuGt0TSEHURRaHSv66xrXbq/LhLyx+Zu7WcB7TK0v4wEt7i+TA==",
+  "dgSpecHash": "Br0kbRU9ZTxhyobSAvtbBFRuS+gWkbcFFFMe46Kk+T7a70Nec/2pPaWohDtdE8z7ulnBeMUi7jiCK8K1kmClwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\franc\\source\\repos\\NuevaCarpeta\\crud\\PrimerCRUD\\PrimerCRUD.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.1\\microsoft.aspnetcore.cryptography.keyderivation.8.0.1.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.1\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.1.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.5.0\\microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
