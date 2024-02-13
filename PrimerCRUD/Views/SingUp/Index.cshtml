@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Register";   
+}
+@using PrimerCRUD.Identity
+@model MyUsruario
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/PrimerCRUD.styles.css" asp-append-version="true" />
+    
+</head>
+<body id="body1">
+
+    <div id="LoginDiv">
+        <h1>Registrarce</h1>
+        <form asp-controller="SingUp" asp-action="SingUp" method="post" >
+
+
+            <label asp-for="UserName">Usuario</label>
+            <input asp-for="UserName" id="LoginInput" />
+
+
+            <label asp-for="Email"> E-mail</label>
+            <input asp-for="Email" id="Email"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+            <label asp-for="PasswordHash"></label>
+            <input asp-for="PasswordHash" class="form-control" />
+            <span asp-validation-for="PasswordHash" class="text-danger"></span>
+
+            
+
+            <br />
+
+            <button onclick ="registrar()">Registrar</button>
+            
+            <br />
+
+            <h4>o</h4>
+            <a asp-controller="Login" asp-action="Login">volver</a>
+        </form>
+    </div>
+
+
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

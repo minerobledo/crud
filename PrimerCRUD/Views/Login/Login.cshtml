@@ -1,11 +1,12 @@
-﻿
-@{
+﻿@{
     Layout = null;
     ViewData["Title"] = "Login";
 }
 <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/PrimerCRUD.styles.css" asp-append-version="true" />
 </head>
 <body id="body1">
     <div id="LoginDiv">
@@ -21,6 +22,9 @@
             <br/>
             <button>Ingresar</button>
             <button asp-controller ="Home" asp-action="Index">Volver</button>
+            <br />
+            <h4>o</h4>
+            <a asp-controller="SingUp" asp-action="Index">Registrarte</a>
         </form>
     </div>
 </body>

@@ -6,7 +6,7 @@ namespace PrimerCRUD.Identity
 {
     public partial class MyIdentitiDBCRUDContext : IdentityDbContext<MyUsruario,MyRol,String>
     {
-        private readonly IConfiguration _configuration;
+        
         public MyIdentitiDBCRUDContext(DbContextOptions<MyIdentitiDBCRUDContext> options) 
             :  base(options)
         {

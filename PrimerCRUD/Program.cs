@@ -23,6 +23,7 @@ builder.Services.AddIdentity<MyUsruario, MyRol>
         {
             // opciones de usuario
             Option.User.RequireUniqueEmail = true;
+            
 
             //opciones de contracenña
             Option.Password.RequireDigit = true;

@@ -1,32 +1,40 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PrimerCRUD.Identity;
+using PrimerCRUD.Models;
 
 namespace PrimerCRUD.Controllers
 {
-    public class LoginController : Controller
+    public class SingUpController : Controller
     {
-       
-
-
-        // GET: HomeController1
-        public ActionResult Login()
+        // GET: RegisterControler
+        public ActionResult Index()
         {
+            
             return View();
         }
 
-        // GET: HomeController1/Details/5
+        [HttpPost]
+        //public ActionResult SingUp(string nombre,string)
+        //{
+        //    if
+        //}
+
+
+        // GET: RegisterControler/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: HomeController1/Create
+        // GET: RegisterControler/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HomeController1/Create
+        // POST: RegisterControler/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -41,13 +49,13 @@ namespace PrimerCRUD.Controllers
             }
         }
 
-        // GET: HomeController1/Edit/5
+        // GET: RegisterControler/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: HomeController1/Edit/5
+        // POST: RegisterControler/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -62,13 +70,13 @@ namespace PrimerCRUD.Controllers
             }
         }
 
-        // GET: HomeController1/Delete/5
+        // GET: RegisterControler/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: HomeController1/Delete/5
+        // POST: RegisterControler/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
