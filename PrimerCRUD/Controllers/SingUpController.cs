@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PrimerCRUD.Identity;
-using PrimerCRUD.Models;
+
 
 namespace PrimerCRUD.Controllers
 {
@@ -11,15 +9,16 @@ namespace PrimerCRUD.Controllers
         // GET: RegisterControler
         public ActionResult Index()
         {
-            
+
             return View();
         }
 
         [HttpPost]
-        //public ActionResult SingUp(string nombre,string)
-        //{
-        //    if
-        //}
+        public ActionResult SingUp(MyUsruario myUsruario)
+        {
+
+            return RedirectToPage("Home/index");
+        }
 
 
         // GET: RegisterControler/Details/5

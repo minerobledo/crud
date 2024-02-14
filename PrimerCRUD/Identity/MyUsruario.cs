@@ -18,6 +18,7 @@ namespace PrimerCRUD.Identity
 
         [Required(ErrorMessage = "El correo electrónico es obligatorio.")]
         [EmailAddress(ErrorMessage = "El correo electrónico no es válido.")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Email error")]
         public override string? Email { get => base.Email; set => base.Email = value; }
 
     }
